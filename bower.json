@@ -1,0 +1,24 @@
+{
+  "name": "module-pattern-framework",
+  "description": "scientific work for bachelor degree",
+  "main": "app.js",
+  "authors": [
+    "Tomas Zaltauskas"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/TomasZaltauskas/modulepatternframework",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.2",
+    "bootstrap": "^3.3.7"
+  }
+}
