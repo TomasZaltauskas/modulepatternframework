@@ -2,3 +2,5 @@
 /node_modules/
 /app/bower_components/
 /.idea/
+/app/generated/
+npm-debug.log
