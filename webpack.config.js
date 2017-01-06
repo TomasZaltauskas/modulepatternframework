@@ -1,4 +1,4 @@
-var webpack = require('webpack');
+//var webpack = require('webpack');
 //var minify = process.env.minify === "true";
 
 module.exports = {
@@ -6,7 +6,7 @@ module.exports = {
     output: {
         path: "./app/generated",
         filename: "merged-modules.js"
-    },
-    plugins: [new webpack.optimize.UglifyJsPlugin()]
+    }
+    //plugins: [new webpack.optimize.UglifyJsPlugin()]
     //plugins: minify ? [new webpack.optimize.UglifyJsPlugin()] : []
 };

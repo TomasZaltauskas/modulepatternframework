@@ -1,0 +1,11 @@
+.navbar-fixed-left {
+    width: 140px;
+    position: fixed;
+    border-radius: 0;
+    height: 100%;
+    margin-top: -20px;
+}
+
+.view{
+    float: right;
+}
