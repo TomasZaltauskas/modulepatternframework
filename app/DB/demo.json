@@ -1,0 +1,89 @@
+{
+  "items": [
+  {
+    "name": "Item 1",
+    "about": "About Item 1",
+    "poster": "img/item1.jpg",
+    "price": 5.99,
+    "id": 1,
+    "subItems": [
+      {
+        "name": "Sub Item 1",
+        "photo" : "DB/img/subitem1.jpg"
+      },
+      {
+        "name": "Sub Item 2",
+        "photo" : "DB/img/subitem2.jpg"
+      }
+    ]
+  },
+    {
+      "name": "Item 2",
+      "about": "About Item 2",
+      "poster": "img/item3.jpg",
+      "price": 10.99,
+      "id": 2,
+      "subItems": [
+        {
+          "name": "Sub Item 3",
+          "photo" : "DB/img/subitem3.jpg"
+        },
+        {
+          "name": "Sub Item 4",
+          "photo" : "DB/img/subitem4.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Item 3",
+      "about": "About Item 3",
+      "poster": "img/item3.jpg",
+      "price": 15.99,
+      "id": 3,
+      "subItems": [
+        {
+          "name": "Sub Item 5",
+          "photo" : "DB/img/subitem5.jpg"
+        },
+        {
+          "name": "Sub Item 6",
+          "photo" : "DB/img/subitem6.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Item 4",
+      "about": "About Item 4",
+      "poster": "img/item4.jpg",
+      "price": 20.99,
+      "id": 4,
+      "subItems": [
+        {
+          "name": "Sub Item 7",
+          "photo" : "DB/img/subitem7.jpg"
+        },
+        {
+          "name": "Sub Item 8",
+          "photo" : "DB/img/subitem8.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Item 5",
+      "about": "About Item 5",
+      "poster": "img/item5.jpg",
+      "price": 25.99,
+      "id": 5,
+      "subItems": [
+        {
+          "name": "Sub Item 9",
+          "photo" : "DB/img/subitem9.jpg"
+        },
+        {
+          "name": "Sub Item 10",
+          "photo" : "DB/img/subitem10.jpg"
+        }
+      ]
+    }
+]
+}

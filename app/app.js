@@ -6,6 +6,7 @@
         'home',
         'login',
         'menu',
+        'first',
         'second',
         'third'
 

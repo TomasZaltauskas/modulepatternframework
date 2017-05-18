@@ -8,3 +8,19 @@
     margin: 0px;
     padding: 0px;
 }
+
+body {
+    background-color: darkgrey;
+}
+
+.btn-primary{
+    background-color: #223b62 !important;
+}
+
+.sub-items-background{
+    background-color: darkgrey;
+}
+
+.sub-items-table{
+    margin-top: 5px;
+}

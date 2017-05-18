@@ -1,1 +1,61 @@
-<h1>home view</h1>
+<table class="table table-bordered">
+    <tr>
+        <th colspan="4">Items</th>
+    </tr>
+    <tr valign="top" ng-repeat="item in items | orderBy: 'order' track by $index" ng-init="item.isClosed = true">
+        <td width="300">
+            <div>
+                <b>{{item.name}}</b> : {{item.about}}
+                <p>
+                    <button class="btn btn-primary" ng-click="switchItems(item.order, -1)">Up</button>
+                </p>
+                <p>
+                    <button class="btn btn-primary" ng-click="switchItems(item.order, 1)">Down</button>
+                </p>
+                <p>
+                <h3>Price: €{{item.price}}</h3>
+                Amount:<input ng-model="item.amount" class="btn btn-default btn-number" type="number" min="1" value="1">
+                </p>
+                <p>
+                    <button class="btn btn-primary" ng-click="whichItem(item.name);addItem(item.poster,item.name,item.amount,item.price)">Add to cart</button>
+                </p>
+                <p>
+                <div class="alert alert-success" role="alert" ng-show="selectedItem == item.name && successCartTextAlert">{{successCartTextAlert}}</div>
+                <div class="alert alert-danger" role="alert" ng-show="selectedItem == item.name && errorCartTextAlert">{{errorCartTextAlert}}</div>
+
+                </p>
+            </div>
+        </td>
+        <td width="250"><a href="{{item.page}}">
+            <img ng-src='DB/{{item.poster}}' width="250"/>
+        </a>
+        </td>
+        <td>
+            <button class="btn btn-primary" ng-click="item.isClosed = !item.isClosed">{{!item.isClosed ? 'Show less': 'Show more'}}
+            </button>
+            <table class="table table-bordered sub-items-table" valign="top" ng-if="item.subItems && !item.isClosed">
+                <tr>
+                    <th class="sub-items-background">Sub items</th>
+                </tr>
+                <tr ng-repeat='subItem in item.subItems' class="sub-items-background">
+                    <td>
+                        <div id="subItem">
+                            <a href="{{subItem.page}}">
+                                <img ng-src='{{subItem.photo}}' width="100"/>
+                            </a> {{subItem.name}}
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <div><b>Comments about {{item.name}}:</b></div>
+            <comments-drv topic-id="{{item.id}}"></comments-drv>
+        </td>
+    </tr>
+    <tr>
+
+    </tr>
+</table>
+
+<div ng-if="!items">Loading Items...</div>
