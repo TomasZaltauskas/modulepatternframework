@@ -1,0 +1,16 @@
+<div class="text-right" ng-if="loggedIn">
+    <h5>Logged In As:{{guestName}}</h5>
+</div>
+<div class="alert alert-danger" class="form-group" ng-if="errorTextAlert && !loggedIn">
+    {{errorTextAlert}}
+</div>
+
+<form ng-show="!loggedIn" class="navbar-form navbar-right" ng-submit="login()">
+    <div class="form-group">
+        <input type="text" ng-model="guest.username" class="form-control" name="username" placeholder="Username">
+    </div>
+    <div class="form-group">
+        <input type="password" ng-model="guest.password" class="form-control" name="password" placeholder="Password">
+    </div>
+    <button type="submit" class="btn btn-default">Log In</button>
+</form>

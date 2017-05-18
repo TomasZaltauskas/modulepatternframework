@@ -1,11 +1,10 @@
-.navbar-fixed-left {
-    width: 140px;
-    position: fixed;
-    border-radius: 0;
-    height: 100%;
-    margin-top: -20px;
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
 }
 
-.view{
-    float: right;
+.ng-isolate-scope{
+    margin: 0px;
+    padding: 0px;
 }

@@ -4,8 +4,8 @@
     angular.module('modulePatternApp', [
         'ui.router',
         'home',
-        'directives',
-        'first',
+        'login',
+        'menu',
         'second',
         'third'
 
