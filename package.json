@@ -16,8 +16,14 @@
   "author": "Tomas Zaltauskas",
   "license": "ISC",
   "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0",
     "gulp": "^3.9.1",
     "gulp-webserver": "^0.9.1",
+    "jasmine-core": "^2.6.2",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.1.1",
+    "karma-jasmine": "^1.1.0",
     "webpack": "^1.13.3"
   }
 }
