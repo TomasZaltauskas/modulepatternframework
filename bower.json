@@ -19,6 +19,8 @@
   "dependencies": {
     "angular": "^1.5.8",
     "angular-ui-router": "^0.3.2",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "moment": "^2.18.1",
+    "underscore": "^1.8.3"
   }
 }
